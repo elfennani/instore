@@ -2,7 +2,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React from "react";
 import { useTheme } from "@react-navigation/native";
 import { Iconify } from "react-native-iconify";
-import SectionLabel from "../common/SectionLabel";
+import SectionLabel from "@/components/common/SectionLabel";
 
 type Props = {};
 

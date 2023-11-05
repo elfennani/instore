@@ -11,9 +11,9 @@ import React, { useEffect, useRef, useState } from "react";
 type Props = {};
 
 const banners = [
-  require("../../assets/banners/banner-1.png"),
-  require("../../assets/banners/banner-2.png"),
-  require("../../assets/banners/banner-3.png"),
+  require("@/assets/banners/banner-1.png"),
+  require("@/assets/banners/banner-2.png"),
+  require("@/assets/banners/banner-3.png"),
 ];
 
 const Banners = (props: Props) => {
