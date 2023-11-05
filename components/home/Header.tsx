@@ -19,7 +19,7 @@ const Header = (props: Props) => {
   return (
     <View style={styles.container}>
       <View style={styles.nav}>
-        <TouchableOpacity activeOpacity={0.6}>
+        <TouchableOpacity hitSlop={16} activeOpacity={0.6}>
           <View>
             <Text style={[styles.title, { color: border }]}>
               Delivery address
@@ -33,13 +33,13 @@ const Header = (props: Props) => {
           </View>
         </TouchableOpacity>
         <View style={{ flexDirection: "row", gap: 12 }}>
-          <TouchableOpacity style={{ position: "relative" }}>
+          <TouchableOpacity hitSlop={16} style={{ position: "relative" }}>
             <View style={[styles.badge, { backgroundColor: notification }]}>
               <Text style={{ color: "white", fontSize: 6 }}>2</Text>
             </View>
             <Iconify icon="mdi-light:cart" size={24} />
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity hitSlop={16}>
             <Iconify icon="mdi-light:bell" size={24} />
           </TouchableOpacity>
         </View>

@@ -3,6 +3,7 @@ import React from "react";
 import SafeView from "../components/common/SafeView";
 import Header from "../components/home/Header";
 import Banners from "../components/home/Banners";
+import Categories from "../components/home/Categories";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
         <Header />
       </View>
       <Banners />
+      <Categories />
     </SafeView>
   );
 };
