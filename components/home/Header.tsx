@@ -44,14 +44,6 @@ const Header = (props: Props) => {
           </TouchableOpacity>
         </View>
       </View>
-      <View style={styles.searchContainer}>
-        <Iconify icon="mdi-light:magnify" color={border} size={24} />
-        <TextInput
-          style={styles.search}
-          placeholder="Search here ..."
-          placeholderTextColor={border}
-        />
-      </View>
     </View>
   );
 };
