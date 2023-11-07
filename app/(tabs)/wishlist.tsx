@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import SafeView from "@/components/common/SafeView";
+import SafeView from "@/features/common/SafeView";
 
 type Props = {};
 

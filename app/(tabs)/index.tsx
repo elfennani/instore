@@ -1,10 +1,10 @@
 import { ScrollView, StyleSheet, TextInput, View } from "react-native";
 import React from "react";
-import SafeView from "@/components/common/SafeView";
-import Header from "@/components/home/Header";
-import Banners from "@/components/home/Banners";
-import Categories from "@/components/home/Categories";
-import ProductsListing from "@/components/home/ProductsListing";
+import SafeView from "@/features/common/SafeView";
+import Header from "@/features/home/Header";
+import Banners from "@/features/home/Banners";
+import Categories from "@/features/home/Categories";
+import ProductsListing from "@/features/home/ProductsListing";
 import { ProductListingItem } from "@/types/ProductType";
 import { Iconify } from "react-native-iconify";
 import { useTheme } from "@react-navigation/native";

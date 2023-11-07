@@ -1,4 +1,4 @@
-import SafeView from "@/components/common/SafeView";
+import SafeView from "@/features/common/SafeView";
 import React from "react";
 import { StyleSheet, Text } from "react-native";
 

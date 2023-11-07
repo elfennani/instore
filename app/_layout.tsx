@@ -1,6 +1,8 @@
 import React from "react";
 import { Redirect, Stack } from "expo-router";
 import { ThemeProvider, Theme } from "@react-navigation/native";
+import { QueryClientProvider } from "@tanstack/react-query";
+import queryClient from "@/services/queryClient";
 
 const RootLayout = () => {
   const theme: Theme = {
@@ -16,15 +18,17 @@ const RootLayout = () => {
   };
 
   return (
-    <ThemeProvider value={theme}>
-      {/* <Redirect href={"/dashboard/"} /> */}
-      <Stack
-        screenOptions={{
-          headerShown: false,
-          // animation: "",
-        }}
-      />
-    </ThemeProvider>
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider value={theme}>
+        <Redirect href={"/account"} />
+        <Stack
+          screenOptions={{
+            headerShown: false,
+            // animation: "",
+          }}
+        />
+      </ThemeProvider>
+    </QueryClientProvider>
   );
 };
 
