@@ -14,19 +14,21 @@ const Categories = (props: Props) => {
   const cats = [
     {
       name: "Apparel",
-      icon: <Iconify icon="mdi:hanger" size={28} color={border} />,
+      icon: <Iconify icon="mdi:hanger" size={28} color={"#767676"} />,
     },
     {
       name: "School",
-      icon: <Iconify icon="mdi:account-school" size={28} color={border} />,
+      icon: <Iconify icon="mdi:account-school" size={28} color={"#767676"} />,
     },
     {
       name: "Sports",
-      icon: <Iconify icon="mdi:basketball" size={28} color={border} />,
+      icon: <Iconify icon="mdi:basketball" size={28} color={"#767676"} />,
     },
     {
       name: "Electronic",
-      icon: <Iconify icon="mdi:monitor-cellphone" size={28} color={border} />,
+      icon: (
+        <Iconify icon="mdi:monitor-cellphone" size={28} color={"#767676"} />
+      ),
     },
     {
       name: "All",
@@ -56,7 +58,7 @@ const Categories = (props: Props) => {
               </View>
               <Text
                 numberOfLines={2}
-                style={[{ color: border }, styles.catTitle]}
+                style={[{ color: "#767676" }, styles.catTitle]}
               >
                 {cat.name}
               </Text>

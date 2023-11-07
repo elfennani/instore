@@ -1,8 +1,6 @@
-import { StyleSheet, TouchableOpacity } from "react-native";
 import React from "react";
-import { Slot, Stack, Tabs } from "expo-router";
+import { Redirect, Stack } from "expo-router";
 import { ThemeProvider, Theme } from "@react-navigation/native";
-import { Iconify } from "react-native-iconify";
 
 const RootLayout = () => {
   const theme: Theme = {
@@ -12,13 +10,14 @@ const RootLayout = () => {
       text: "#393f42",
       card: "hsl(240, 25%, 98%)",
       notification: "#D65B5B",
-      border: "#939393",
+      border: "#d5d5d5",
     },
     dark: false,
   };
 
   return (
     <ThemeProvider value={theme}>
+      {/* <Redirect href={"/dashboard/"} /> */}
       <Stack
         screenOptions={{
           headerShown: false,
